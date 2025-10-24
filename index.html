@@ -37,7 +37,7 @@
         <!-- Header -->
         <header class="text-center mb-10 p-4 border-b border-gray-700">
             <h1 class="text-4xl font-extrabold text-white mb-2">⚡ SuperFast Video Downloader</h1>
-            <p class="text-lg text-gray-400">YouTube link daalein aur apni pasand ki quality mein video download karein.</p>
+            <p class="text-lg text-gray-400">YouTube link daalein aur apni pasand ki quality mein video download karein free me without ads.</p>
         </header>
 
         <!-- Input Area -->
@@ -59,7 +59,7 @@
                 </button>
             </div>
             <p id="apiEndpointText" class="mt-4 text-xs text-gray-500 text-center">
-                Using API: https://you-tube-video-downloader-sooty.vercel.app/download
+                before downloading high quality videos please check the video are mute or not because some video are without audio
             </p>
         </div>
 
@@ -93,7 +93,7 @@
                         <!-- Quality buttons will be inserted here -->
                     </div>
                     <div id="noQualitiesMessage" class="hidden text-red-400 mt-4 p-3 bg-red-900/20 rounded-lg border border-red-800">
-                        <p>🚫 Khel ho gaya! Download links nahi mile. Ho sakta hai video private ho ya API fail ho gaya ho.</p>
+                        <p>🚫 Khel ho gaya! Download links nahi mile. Ho sakta hai video private ho ya Server fail ho gaya ho.</p>
                     </div>
                 </div>
 
@@ -177,7 +177,7 @@
                 const data = await response.json();
 
                 if (data.status_code !== 200 || !data.title || !data.qualities || data.qualities.length === 0) {
-                    showMessage('error', 'Video details fetch karne mein dikkat aayi. Ho sakta hai link invalid ho ya API mein koi problem ho.');
+                    showMessage('error', 'Video details fetch karne mein dikkat aayi. Ho sakta hai link invalid ho ya server mein koi problem ho.');
                     console.error("API response data:", data);
                     return;
                 }
@@ -234,3 +234,4 @@
 
 </body>
 </html>
+
